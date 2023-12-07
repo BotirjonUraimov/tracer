@@ -14,7 +14,6 @@ export async function getStaticProps() {
   const data = await res.json();
 
   return {
-    props: { data, token: process.env.MAPBOX_API_TOKEN },
-    revalidate: 20
+    revalidate: 20,
   };
 }
